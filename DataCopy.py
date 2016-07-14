@@ -15,9 +15,9 @@ os.chdir(dst)
 for dirName, subdirList, fileList in os.walk(dst):
     for filename in fileList:
         os.remove(filename)
-        print(filename, 'was deleted from', dst)
+##        print(filename, 'was deleted from', dst)
 
-input('Press any key to continue.\n\n')
+##input('Press any key to continue.\n\n')
 
 # Loop through files in the private directory and copy the files to the shared directory.
 for dirName, subdirList, fileList in os.walk(src):
@@ -26,6 +26,6 @@ for dirName, subdirList, fileList in os.walk(src):
         fileDst = dst + '\\' + filename
         
         shutil.copy2(fileSrc, fileDst)
-        print(filename, 'was copied to', src)
+##        print(filename, 'was copied to', src)
 
-input('Press any key to continue.')
+##input('Press any key to continue.')
